@@ -15,6 +15,21 @@
   <link rel="stylesheet" href="assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+  <style>
+    [class*=sidebar-dark-] {
+       background-color: #174895;
+    }
+    .card-header {
+      background-color: #174895;
+      color: #ffffff;
+    }
+    a {
+      text-align: center;
+    }
+    li {
+      text-align: center;
+    }  
+  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
