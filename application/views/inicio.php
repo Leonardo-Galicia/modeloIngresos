@@ -84,7 +84,7 @@
 		#sidebar {
 			min-width: 250px;
 			max-width: 250px;
-			background: #7386D5;
+			background: #174895;
 			color: #fff;
 			transition: all 0.3s;
 		}
@@ -136,7 +136,7 @@
 
 		#sidebar .sidebar-header {
 			padding: 20px;
-			background: #6d7fcc;
+			background: #174895;
 		}
 
 		#sidebar .sidebar-header strong {
