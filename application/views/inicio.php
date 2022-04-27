@@ -15,27 +15,32 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 	
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-  
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
 
 	<style>
-		@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 		body {
 			font-family: 'Poppins', sans-serif;
 			background: #fafafa;
 		}
 		body {
-        margin: 0;
-        font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 0.9rem;
-        color: #858796;
-        text-align: left;
-        background-color: #fff;
-      }
+			margin: 0;
+			font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			font-size: 1.2rem;
+			font-weight: 400;
+			line-height: 0.9rem;
+			color: #858796;
+			text-align: left;
+			background-color: #fff;
+		}
+		#sidebar {
+			min-width: 209px !important;
+			max-width: 250px;
+		}
 		.card-header {
 			background-color: #174895;
 			color: #ffffff;
@@ -305,57 +310,57 @@
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-home"></i>
-                        Home
+                        Ingresos
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Home 1</a>
+                            <a href="#">Modulo a</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">Modulo b</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
+                            <a href="#">Modulo c</a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fas fa-briefcase"></i>
-                        About
+                        -
                     </a>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-copy"></i>
-                        Pages
+                        -
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Page 1</a>
+                            <a href="#">-</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="#">-</a>
                         </li>
                         <li>
-                            <a href="#">Page 3</a>
+                            <a href="#">-</a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fas fa-image"></i>
-                        Portfolio
+                        -
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fas fa-question"></i>
-                        FAQ
+                        -
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fas fa-paper-plane"></i>
-                        Contact
+                        -
                     </a>
                 </li>
             </ul>
@@ -494,14 +499,7 @@
 			</main>
         </div>
     </div>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+		
     
 	<script type="text/javascript">
 		$(document).ready(function() {
