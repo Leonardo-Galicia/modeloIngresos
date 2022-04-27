@@ -10,8 +10,6 @@
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -28,7 +26,23 @@
 			font-family: 'Poppins', sans-serif;
 			background: #fafafa;
 		}
-
+		body {
+        margin: 0;
+        font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 0.9rem;
+        color: #858796;
+        text-align: left;
+        background-color: #fff;
+      }
+		.card-header {
+			background-color: #174895;
+			color: #ffffff;
+		}
+		.h3, h3 {
+			text-align: center;
+		}
 		p {
 			font-family: 'Poppins', sans-serif;
 			font-size: 1.1em;
@@ -146,7 +160,7 @@
 
 		#sidebar ul.components {
 			padding: 20px 0;
-			border-bottom: 1px solid #47748b;
+			border-bottom: 1px solid #174895;
 		}
 
 		#sidebar ul li a {
@@ -156,7 +170,7 @@
 		}
 
 		#sidebar ul li a:hover {
-			color: #7386D5;
+			color: #174895;
 			background: #fff;
 		}
 
@@ -167,7 +181,7 @@
 		#sidebar ul li.active>a,
 		a[aria-expanded="true"] {
 			color: #fff;
-			background: #6d7fcc;
+			background: #174895;
 		}
 
 		a[data-toggle="collapse"] {
@@ -185,7 +199,7 @@
 		ul ul a {
 			font-size: 0.9em !important;
 			padding-left: 30px !important;
-			background: #6d7fcc;
+			background: #174895;
 		}
 
 		ul.CTAs {
@@ -207,7 +221,7 @@
 
 		a.article,
 		a.article:hover {
-			background: #6d7fcc !important;
+			background: #174895 !important;
 			color: #fff !important;
 		}
 
@@ -283,7 +297,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>SIPAE</h3>
                 <strong>BS</strong>
             </div>
 
@@ -352,127 +366,124 @@
 
         <!-- Page Content  -->
         <div id="content">
-
-            
-
             <main class="mt-5 pt-3">
 			<div class="container-fluid">
 				<div class="row">
 				<div class="col-md-12">
-					<h4>Dashboard</h4>
+					<h4>Modulo ingresos</h4>
 				</div>
 				</div>
 				<div class="row">
 				<div class="col-md-12 mb-3">
 					<div class="card">
 					<div class="card-header">
-						<span><i class="bi bi-table me-2"></i></span> Data Table
+						<span><i class="bi bi-table me-2"></i></span> 2022
 					</div>
 					<div class="card-body">
 						<div class="table-responsive">
 						<table id="example"	class="table table-striped data-table display" style="width: 100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011/07/25</td>
-                <td>$170,750</td>
-            </tr>
-            <tr>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009/01/12</td>
-                <td>$86,000</td>
-            </tr>
-            <tr>
-                <td>Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2012/03/29</td>
-                <td>$433,060</td>
-            </tr>
-            <tr>
-                <td>Airi Satou</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>33</td>
-                <td>2008/11/28</td>
-                <td>$162,700</td>
-            </tr>
-            <tr>
-                <td>Brielle Williamson</td>
-                <td>Integration Specialist</td>
-                <td>New York</td>
-                <td>61</td>
-                <td>2012/12/02</td>
-                <td>$372,000</td>
-            </tr>
-            <tr>
-                <td>Herrod Chandler</td>
-                <td>Sales Assistant</td>
-                <td>San Francisco</td>
-                <td>59</td>
-                <td>2012/08/06</td>
-                <td>$137,500</td>
-            </tr>
-            <tr>
-                <td>Rhona Davidson</td>
-                <td>Integration Specialist</td>
-                <td>Tokyo</td>
-                <td>55</td>
-                <td>2010/10/14</td>
-                <td>$327,900</td>
-            </tr>
-            <tr>
-                <td>Colleen Hurst</td>
-                <td>Javascript Developer</td>
-                <td>San Francisco</td>
-                <td>39</td>
-                <td>2008/09/15</td>
-                <td>$205,500</td>
-            </tr>
-            <tr>
-                <td>Sonya Frost</td>
-                <td>Software Engineer</td>
-                <td>Edinburgh</td>
-                <td>23</td>
-                <td>2008/12/13</td>
-                <td>$103,610</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Position</th>
+									<th>Office</th>
+									<th>Age</th>
+									<th>Start date</th>
+									<th>Salary</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiger Nixon</td>
+									<td>System Architect</td>
+									<td>Edinburgh</td>
+									<td>61</td>
+									<td>2011/04/25</td>
+									<td>$320,800</td>
+								</tr>
+								<tr>
+									<td>Garrett Winters</td>
+									<td>Accountant</td>
+									<td>Tokyo</td>
+									<td>63</td>
+									<td>2011/07/25</td>
+									<td>$170,750</td>
+								</tr>
+								<tr>
+									<td>Ashton Cox</td>
+									<td>Junior Technical Author</td>
+									<td>San Francisco</td>
+									<td>66</td>
+									<td>2009/01/12</td>
+									<td>$86,000</td>
+								</tr>
+								<tr>
+									<td>Cedric Kelly</td>
+									<td>Senior Javascript Developer</td>
+									<td>Edinburgh</td>
+									<td>22</td>
+									<td>2012/03/29</td>
+									<td>$433,060</td>
+								</tr>
+								<tr>
+									<td>Airi Satou</td>
+									<td>Accountant</td>
+									<td>Tokyo</td>
+									<td>33</td>
+									<td>2008/11/28</td>
+									<td>$162,700</td>
+								</tr>
+								<tr>
+									<td>Brielle Williamson</td>
+									<td>Integration Specialist</td>
+									<td>New York</td>
+									<td>61</td>
+									<td>2012/12/02</td>
+									<td>$372,000</td>
+								</tr>
+								<tr>
+									<td>Herrod Chandler</td>
+									<td>Sales Assistant</td>
+									<td>San Francisco</td>
+									<td>59</td>
+									<td>2012/08/06</td>
+									<td>$137,500</td>
+								</tr>
+								<tr>
+									<td>Rhona Davidson</td>
+									<td>Integration Specialist</td>
+									<td>Tokyo</td>
+									<td>55</td>
+									<td>2010/10/14</td>
+									<td>$327,900</td>
+								</tr>
+								<tr>
+									<td>Colleen Hurst</td>
+									<td>Javascript Developer</td>
+									<td>San Francisco</td>
+									<td>39</td>
+									<td>2008/09/15</td>
+									<td>$205,500</td>
+								</tr>
+								<tr>
+									<td>Sonya Frost</td>
+									<td>Software Engineer</td>
+									<td>Edinburgh</td>
+									<td>23</td>
+									<td>2008/12/13</td>
+									<td>$103,610</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Name</th>
+									<th>Position</th>
+									<th>Office</th>
+									<th>Age</th>
+									<th>Start date</th>
+									<th>Salary</th>
+								</tr>
+							</tfoot>
 						</table>
 						</div>
 					</div>
@@ -491,13 +502,7 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
+    
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#example').DataTable();
